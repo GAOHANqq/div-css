@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		width:300px;
+		height:500px;
+		border:1px solid red;
+	}
+	.box:first-line{
+		color:Red;
+	}
+	.box:first-letter{
+		color:green;
+	}
+	::selection{
+		background-color:pink;
+	}
+  </style>
+ </head>
+ <body>
+ <!--
+	E：first-line	表示E元素中的第一行
+	E：first-letter	表示E元素中的第一个字符
+	E：：selection	表示E元素在用户选中文字时
+ -->
+  <div class="box">
+		明明可以靠颜值，确偏要靠才华，这就是我和明明的区别
+  </div>
+ </body>
+</html>

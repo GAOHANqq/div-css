@@ -1,0 +1,148 @@
+<!DOCTYPE html><html><head><title>第二章:常用css和css规范</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'><style></style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<h2 id="第二章常用css和css规范">第二章:常用css和css规范</h2>
+
+<hr>
+
+
+
+<h3 id="一css选择器">一.css选择器</h3>
+
+<blockquote>
+  <ul><li><p><strong>ID选择器</strong> <br>
+  唯一性,ID可以多次出现,但是相同ID名称只能出现一次</p>
+  
+  <pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line">&lt;<span class="hljs-selector-tag">head</span>&gt;
+</div><div class="hljs-line"> &lt;<span class="hljs-selector-tag">styl</span>&gt;
+</div><div class="hljs-line">  <span class="hljs-selector-id">#text1</span>{
+</div><div class="hljs-line">     <span class="hljs-attribute">color</span>:blue;<span class="hljs-comment">/*字体颜色*/</span>
+</div><div class="hljs-line">  }
+</div><div class="hljs-line">  <span class="hljs-selector-id">#text2</span>{
+</div><div class="hljs-line">     <span class="hljs-attribute">color</span>:red;
+</div><div class="hljs-line"> }
+</div><div class="hljs-line"> &lt;/<span class="hljs-selector-tag">style</span>&gt;
+</div><div class="hljs-line">&lt;/<span class="hljs-selector-tag">head</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">body</span>&gt;
+</div><div class="hljs-line"> &lt;<span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">id</span>='<span class="hljs-selector-tag">text1</span>'&gt;学习是自己的事情,靠别人是不行的&lt;/<span class="hljs-selector-tag">p</span>&gt;
+</div><div class="hljs-line"> &lt;<span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">id</span>='<span class="hljs-selector-tag">text2</span>'&gt;学习是自己的事情,靠别人是不行的&lt;/<span class="hljs-selector-tag">p</span>&gt;
+</div><div class="hljs-line">&lt;/<span class="hljs-selector-tag">body</span>&gt;
+</div></code></pre></li>
+  <li><p><strong>class类名选择器</strong> <br>
+  不具有唯一性,同一个类名可以多次出现</p>
+  
+  <pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line">&lt;<span class="hljs-selector-tag">head</span>&gt;
+</div><div class="hljs-line"> &lt;<span class="hljs-selector-tag">styl</span>&gt;
+</div><div class="hljs-line">  <span class="hljs-selector-class">.text</span>{
+</div><div class="hljs-line">     <span class="hljs-attribute">color</span>:blue;<span class="hljs-comment">/*字体颜色*/</span>
+</div><div class="hljs-line">  }
+</div><div class="hljs-line"> &lt;/<span class="hljs-selector-tag">style</span>&gt;
+</div><div class="hljs-line">&lt;/<span class="hljs-selector-tag">head</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">body</span>&gt;
+</div><div class="hljs-line"> &lt;<span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">class</span>='<span class="hljs-selector-tag">text</span>'&gt;不懂的,先问问自己到底能不能解决&lt;/<span class="hljs-selector-tag">p</span>&gt;
+</div><div class="hljs-line"> &lt;<span class="hljs-selector-tag">p</span> <span class="hljs-selector-tag">class</span>='<span class="hljs-selector-tag">text</span>'&gt;自己是否真的用力去解决了&lt;/<span class="hljs-selector-tag">p</span>&gt;
+</div><div class="hljs-line">&lt;/<span class="hljs-selector-tag">body</span>&gt;
+</div></code></pre></li>
+  <li><p><strong>标签选择器</strong></p>
+  
+  <pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line">&lt;<span class="hljs-selector-tag">head</span>&gt;
+</div><div class="hljs-line"> &lt;<span class="hljs-selector-tag">styl</span>&gt;
+</div><div class="hljs-line">    <span class="hljs-selector-tag">p</span>{
+</div><div class="hljs-line">     <span class="hljs-attribute">color</span>:blue;<span class="hljs-comment">/*字体颜色*/</span>
+</div><div class="hljs-line">  }
+</div><div class="hljs-line"> &lt;/<span class="hljs-selector-tag">style</span>&gt;
+</div><div class="hljs-line">&lt;/<span class="hljs-selector-tag">head</span>&gt;
+</div><div class="hljs-line">&lt;<span class="hljs-selector-tag">body</span>&gt;
+</div><div class="hljs-line"> &lt;<span class="hljs-selector-tag">p</span>&gt;学习,学的更多是一种方法&lt;/<span class="hljs-selector-tag">p</span>&gt;
+</div><div class="hljs-line">&lt;/<span class="hljs-selector-tag">body</span>&gt;
+</div></code></pre></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="二样式表">二.样式表</h3>
+
+<blockquote>
+  <ul><li><p><strong>基本属性介绍</strong></p>
+  
+  <pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line">&lt;<span class="hljs-selector-tag">style</span>&gt;
+</div><div class="hljs-line">  <span class="hljs-selector-tag">div</span>{
+</div><div class="hljs-line">     <span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;<span class="hljs-comment">/*宽度*/</span>
+</div><div class="hljs-line">     <span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;<span class="hljs-comment">/*高度*/</span>
+</div><div class="hljs-line">     <span class="hljs-attribute">background-color</span>:skyblue;<span class="hljs-comment">/*背景颜色*/</span>
+</div><div class="hljs-line">     <span class="hljs-attribute">color</span>:red;<span class="hljs-comment">/*字体颜色*/</span>
+</div><div class="hljs-line">  }
+</div><div class="hljs-line">&lt;/<span class="hljs-selector-tag">style</span>&gt;
+</div></code></pre></li>
+  <li><p><strong>内部样式</strong> <br>
+  把样式表写在<code>&lt;style&gt;&lt;/style&gt;</code>标签里面,再把<code>&lt;style&gt;&lt;/style&gt;</code>标签放在<code>&lt;head&gt;&lt;/head&gt;</code>标签里面</p>
+  
+  <pre class="prettyprint hljs-dark"><code class="language-html hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+</div><div class="hljs-line"> <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+</span></div><div class="hljs-line">  <span class="hljs-selector-tag">div</span>{
+</div><div class="hljs-line">     <span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;<span class="hljs-comment">/*宽度*/</span>
+</div><div class="hljs-line">     <span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;<span class="hljs-comment">/*高度*/</span>
+</div><div class="hljs-line">     <span class="hljs-attribute">background-color</span>:skyblue;<span class="hljs-comment">/*背景颜色*/</span>
+</div><div class="hljs-line">     <span class="hljs-attribute">color</span>:red;<span class="hljs-comment">/*字体颜色*/</span>
+</div><div class="hljs-line">  }
+</div><div class="hljs-line"> <span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+</div></code></pre></li>
+  <li><p><strong>行内样式</strong> <br>
+  抒写在起始标签内部关键字是<code>style</code></p>
+  
+  <pre class="prettyprint hljs-dark"><code class="language-html hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">'width:200px;height:200px;background-color:red;'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="三css命名规范">三.css命名规范</h3>
+
+<p>使用类选择器,尽量避免使用ID选择器定义样式 <br>
+ID在一个页面中的唯一性导致了如果以ID为选择器来写CSS,就无法重用.</p>
+
+<blockquote>
+  <ul><li><strong>以字母开头</strong> <br>
+  <ol>
+  <li rel="1">必须以字母开头命名选择器,这样可保证在所有浏览器下都能兼容;</li>
+  <li rel="2">不允许单个字母的类选择器出现;</li>
+  <li rel="3">允许命名带有广告等英文的单词,例如ad,adv,adver,advertising,已防止该模块被浏览器当成垃圾广告过滤掉.</li></ol></li>
+  <li><strong>全小写,并使用 <code>-</code> 连字符</strong> <br>
+  <ol>
+  <li rel="1">下划线 <code>_</code> 禁止出现在class命名中,统一使用<code>-</code>连字符</li>
+  <li rel="2">禁止驼峰式命名</li>
+  <li rel="3">不要出现<code>-</code>数字连接</li></ol></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="四组合选择器">四.组合选择器</h3>
+
+<blockquote>
+  <ul><li><p>后代选择器 <br>
+  中间用空格隔开</p>
+  
+  <pre class="prettyprint hljs-dark"><code class="language-html hljs xml"><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+</span></div><div class="hljs-line"> <span class="hljs-selector-id">#wrap</span> <span class="hljs-selector-class">.content</span> <span class="hljs-selector-tag">p</span>{
+</div><div class="hljs-line">    <span class="hljs-attribute">width</span>:<span class="hljs-number">200px</span>;
+</div><div class="hljs-line">    <span class="hljs-attribute">height</span>:<span class="hljs-number">200px</span>;
+</div><div class="hljs-line">    <span class="hljs-attribute">background-color</span>:yellow;
+</div><div class="hljs-line">    <span class="hljs-attribute">color</span>:red;
+</div><div class="hljs-line"> }
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'wrap'</span>&gt;</span>
+</div><div class="hljs-line"> <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">'content'</span>&gt;</span>
+</div><div class="hljs-line">   <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>我是最小的那一个<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</div><div class="hljs-line"> <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div><div class="hljs-line"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</div></code></pre></li>
+  <li><p>子代选择器 <code>&gt;</code></p></li>
+  <li>毗邻元素选择器 <code>+</code></li>
+  <li>兄弟元素选择器 <code>~</code></li>
+  </ul>
+</blockquote></div></body></html>

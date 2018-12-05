@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			.box{
+				width: 180px;
+				height: 300px;
+				margin:50px auto;
+				background: url("charector.png") no-repeat;
+				animation:run 1s infinite;
+				/* animation-timing-function:steps(6); */
+			}
+			/*补间动画*/
+		@keyframes run{
+			0%{
+				background-position-x:0;
+			}
+			0.01%,14.27%{
+				background-position-x:-180px;
+			}
+			14.28%,28.55%{
+				background-position-x:-360px;
+			}
+			28.56%,42.83%{
+				background-position-x:-540px;
+			}
+			42.84%,57.11%{
+				background-position-x:-720px;
+			}
+			57.12%,71.3%{
+				background-position-x:-900px;
+			}
+			71.4%,85.67%{
+				background-position-x:-1080px;
+			}
+			85.68%,100%{
+				background-position-x:0;
+			}
+			/*每次跑一个盒子的宽度*/
+		}
+
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>线性渐变和径向渐变</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+			.box{
+				width: 200px;
+				height: 200px;
+				border:1px solid red;
+				background:repeating-linear-gradient(
+				to top,
+				red 10px,
+				transparent 30px/*线性渐变 linear-gradient */
+				),repeating-linear-gradient(
+				to right,
+				green 10px,
+				transparent 30px
+				);
+			}
+			.box1{
+				width: 300px;
+				height: 300px;
+				border:1px solid red;/*径向渐变 radial-gradient */
+				background: radial-gradient(
+					100px 100px at 200px 200px,
+					red,
+					green);
+				/*radial-gradient(形状 半径 at 圆心,颜色,值)*/
+			}
+			/*背景平铺*/
+			.box2{
+				width: 300px;
+				height: 300px;
+				border:1px solid red;
+				background: repeating-radial-gradient(
+					red 10px,
+					green 20px
+					);
+			}
+				/*radial-gradient(形状 半径 at 圆心,颜色,值)*/
+				/*径向渐变 radial-gradient */
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+		<div class="box1"></div>
+		<div class="box2"></div>
+	</body>
+</html>

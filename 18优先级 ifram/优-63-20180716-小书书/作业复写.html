@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			html{
+				height: 100%;
+			}
+			body{
+				overflow: hidden;
+				height: 100%;
+				background: url("images/mxcp1.jpg") no-repeat center/cover;
+			}
+			.wrap{
+				display:table;
+				height: 85%;
+				width: 85%;
+				margin:50px auto;
+				box-shadow: #fff 0 0 10px 0;
+			}
+			.wrap ul{
+				display:table-cell;
+				width: 20%;
+				height: 100%;
+				vertical-align:top;
+			}
+			.wrap ul li{
+				height: 10%;
+				margin-bottom:5px;
+				background: #fff no-repeat center/100%;
+			}
+			.wrap ul li:nth-child(1){
+				margin-top:20px;
+				background-image: url("images/1.png");
+			}
+			.wrap ul li:nth-child(2){
+				background-image: url("images/2.png");
+			}
+			.wrap ul li:nth-child(3){
+				background-image: url("images/3.png");
+			}
+			.wrap ul li:nth-child(4){
+				background-image: url("images/4.png");
+			}
+			.wrap ul li a{
+				display:block;
+				width: 100%;
+				height: 100%;
+			}
+			.wrap .iframe{overflow:hidden;
+				display:table-cell;
+			}
+			.wrap .iframe iframe{
+				overflow:hidden;
+				width: 100%;
+				height: 100%;
+				margin-left:40px;
+				background-color: #fff;
+				border-radius:10px;
+			}
+		</style>
+
+
+	</head>
+	<body>
+		<div class="wrap">
+			<ul>
+				<li><a href="https://jx.tmall.com" target="myTarget"></a></li>
+				<li><a href="http://www.baidu.com" target="myTarget"></a></li>
+				<li><a href="http://www.jd.com" target="myTarget"></a></li>
+				<li><a href="https://www.sina.com.cn" target="myTarget"></a></li>
+			</ul>
+			<div class="iframe">
+				<iframe src="http://www.baidu.com" frameborder="1" name="myTarget"></iframe>
+			</div>
+		</div>
+	</body>
+</html>

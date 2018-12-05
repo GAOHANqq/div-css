@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		position:relative;/*相对定位*/
+		margin:50px auto;
+		width:500px;
+		height:500px;
+		border:1px solid red;
+	}
+	.box .btn{
+		position:absolute;/*绝对定位*/
+		top:50%;
+		margin-top:-25px;
+		width:100px;
+		height:50px;
+		background-color:green;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		如果当绝对定位的偏移值为百分数时，值是相对于它定位父级的宽高来的；
+	-->
+
+	<div class="box">
+		<div class="btn"></div>
+	</div>
+ </body>
+</html>

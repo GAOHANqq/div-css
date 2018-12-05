@@ -1,0 +1,113 @@
+<!doctype html><!-- 页面头部申明,html5-->
+<html><!-- 页面的根目录-->
+	<head><!-- 页面的基本信息载体,不参与到页面的展示中,帮助展示-->
+		<meta charset='utf-8'><!-- 元标签,储存单个信息的标签,单标签,不能写/,utf-8: 支持中文的万国码-->
+		<title>银时</title><!-- 这是标题-->
+		<meta name='keywords' content=''><!-- 关键词-->
+		<meta name='description' content=''><!-- 描述信息-->
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			.flex{
+				display: flex;
+				/* flex-direction: column-reverse; *//* 文字排列方向,改变*/
+				/*
+					修改: 主轴朝向
+
+				*/
+				/* flex-wrap: wrap-reverse; *//* 颠倒交叉轴位置*/
+				/*
+					修改: 交叉轴朝向,换行不换行的问题
+				*/
+				flex-flow:  row  nowrap;/* 核心,*/
+				/* 决定了内部元素的坐标轴*/
+
+				/* 对齐方式*/
+				/* justify-content: flex-start; *//* 主轴开始的位置,默认值*/
+				/* justify-content: flex-end; *//* 对齐到主轴指向的位置*/
+				/* justify-content: space-between; *//* 均分间距*/
+				/* justify-content: space-around; *//* 均分间距*/
+
+				/* align-items: flex-end; *//* 单行,对每行元素中每一个控制对齐方式*/
+				/* align-content: space-around; *//* 多行,对这几行控制*/
+				/* 
+					多行
+					抽象出一行为单个元素
+					flex: flex-grow flex-shrink flex-basis
+					auto(1 1 auto)//自动缩放
+					none(0 0 auto)//刚体
+
+
+				*/
+				/* width: 700px; */
+				min-width: 600px;
+				height: 600px;
+				border: 1px solid black;
+			}
+			.flex li{
+				/* float: left; */
+				width: 150px;
+				height: 150px;
+				font-size: 40px;
+				text-align: center;
+				/* line-height: 150px; */
+				box-shadow: 0 0 5px black inset;
+			}
+			/*
+				假设剩余 300px
+					1分配
+					content < width/height < flex-basis < min-width… 
+			*/
+			.flex li:nth-child(1){
+				/* order: 1; *//* 控制排列顺序*/
+				flex-shrink: 2;
+				width: 150px;
+				height: 50px;
+				/* flex-grow: .2; *//* 分配剩余的1份*/
+			}
+			.flex li:nth-child(2){
+				/* order: -2; */
+				height: 100px;
+				line-height: 100px;
+				/* flex-grow: .2; */
+				/* flex-grow: 2; *//* 分配剩余的2份*/
+			}
+			.flex li:nth-child(6){
+				/* order: -1; */
+				height: 20px;
+				line-height: 100px;
+			}
+			/*
+				inline-block(外-内)
+					对外是inline
+					对内是block
+				flex: 核心: 父元素控制子元素的排列布局方案
+					默认特点: 从左往右,只占一行,子元素具有弹性,当空间不足,就会均匀压缩
+
+				主轴: 元素排列的走向形成的直线
+
+				交叉轴: 
+
+				换行: flex-wrap: 
+			*/
+		</style>
+	</head>
+	<body><!-- 页面的主体内容展示区域-->
+		<ul class="flex">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<!-- <li>7</li> --><!--  -->
+			<!-- <li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li> -->
+		</ul>
+	</body>
+</html>

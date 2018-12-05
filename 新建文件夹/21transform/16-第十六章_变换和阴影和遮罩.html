@@ -1,0 +1,110 @@
+<!DOCTYPE html><html><head><title>第十六章:变换和阴影和遮罩</title><meta charset='utf-8'><link href='https://dn-maxiang.qbox.me/res-min/themes/marxico.css' rel='stylesheet'><style></style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+<h2 id="第十六章变换和阴影和遮罩">第十六章:变换和阴影和遮罩</h2>
+
+
+
+<h3 id="一2d变换transform">一.2D变换<code>transform</code></h3>
+
+<blockquote>
+  <ul><li>scale<code>缩放</code> <br>
+  <ol>
+  <li rel="1">取值 大于0小于1 是缩小</li>
+  <li rel="2">大于1是放大</li></ol></li>
+  <li>translate <code>位移</code> <br>
+  <ol>
+  <li rel="1">translateX() / translateY</li>
+  <li rel="2">属性值第一个是X轴方向上,第二个是Y轴方向上</li></ol></li>
+  <li>skew <code>倾斜</code> <br>
+  <ol>
+  <li rel="1">skewX() / skewY()</li>
+  <li rel="2">属性值第一个是X轴方向上,第二个是Y轴方向上</li></ol></li>
+  <li>transform-origin <code>2D变换基点</code> <br>
+  <ol>
+  <li rel="1">关键词: left / top / bottom / right</li>
+  <li rel="2">像素单位值</li>
+  <li rel="2">属性值:第一个是X轴上,第二个是Y轴上,第三个值Z轴上</li></ol></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="二3d变换transform">二.3D变换<code>transform</code></h3>
+
+<blockquote>
+  <ul><li>transform-style:preserve-3d; <br>
+  转换为3D元素</li>
+  <li>perspective <code>景深</code> <br>
+  设置元素被查看位置的视角,3D立体效果 <br>
+  <ol>
+  <li rel="1">属性值:像素</li>
+  <li rel="2">给3D元素父级添加景深,不会出现梯形效果,近大远小的效果</li>
+  <li rel="3">给3D元素添加景深,会出现梯形效果</li></ol></li>
+  <li>rotate <code>旋转</code> <br>
+  <ol>
+  <li rel="1">属性值: <br>
+  1) rotateX() / rotateY() / rotateZ()</li>
+  <li rel="2">scaleZ()<code>Z轴缩放</code></li>
+  <li rel="3">translateZ() <code>Z轴位移</code></li>
+  <li rel="4">skewZ() <code>Z轴倾斜</code></li></ol></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="三阴影">三.阴影</h3>
+
+<blockquote>
+  <ul><li><p><strong>盒子阴影</strong> <strong><code>box-shadow</code></strong></p>
+  
+  <pre class="prettyprint hljs-dark"><code class="language-css hljs"><div class="hljs-line"><span class="hljs-selector-tag">box</span>{
+</div><div class="hljs-line"> <span class="hljs-attribute">box-shadow</span>: h-shadow v-shadow blur spread color;
+</div><div class="hljs-line">}
+</div></code></pre>
+  
+  <ol>
+  <li rel="1">第一个属性值是 X轴偏移量 </li>
+  <li rel="2">第二个属性值是Y轴偏移量</li>
+  <li rel="3">第三个属性值是模糊半径</li>
+  <li rel="4">第四个属性值是阴影大小 <br>
+  以上四个属性值像素即可</li>
+  <li rel="5">第五个属性值是阴影颜色</li>
+  <li rel="6">第六个属性值是阴影位置 <br>
+  1) 默认外部 <br>
+  2) inset 内部</li>
+  <li rel="7">多个阴影逗号隔开叠加</li></ol></li>
+  <li><p><strong>文字阴影</strong> <strong><code>text-shadow</code></strong></p>
+  
+  <pre class="prettyprint hljs-dark"><code class="hljs mipsasm"><div class="hljs-line"><span class="hljs-keyword">box{
+</span></div><div class="hljs-line"> text-<span class="hljs-keyword">shadow: </span>h-<span class="hljs-keyword">shadow </span>v-<span class="hljs-keyword">shadow </span><span class="hljs-keyword">blur </span>color<span class="hljs-comment">;</span>
+</div><div class="hljs-line">}
+</div></code></pre>
+  
+  <ol>
+  <li rel="1">第一个属性值是 X轴偏移量 </li>
+  <li rel="2">第二个属性值是Y轴偏移量</li>
+  <li rel="3">第三个属性值是模糊半径 <br>
+  以上四个属性值像素即可</li>
+  <li rel="4">第五个属性值是阴影颜色</li>
+  <li rel="5">多个阴影逗号隔开叠加</li></ol></li>
+  </ul>
+</blockquote>
+
+
+
+<h3 id="四遮罩mask">四.遮罩<code>(mask)</code></h3>
+
+<blockquote>
+  <ul><li>maske-image:url(); <br>
+  任何内心图片都是可以的,只是说不透明的图片我们看不到后面的背景</li>
+  <li>mask-repeat <br>
+  属性值默认repeat,行为类似于background-repeat</li>
+  <li>mask-position <br>
+  属性值和background-position支持的属性值表现一模一样</li>
+  <li>mask-size <br>
+  遮罩图片的大小</li>
+  <li>mask-origin</li>
+  </ul>
+</blockquote></div></body></html>

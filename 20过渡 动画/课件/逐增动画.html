@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		width:180px;
+		height:300px;
+		margin:50px auto;
+		background:url("charector.png") no-repeat;
+		animation:run 1s infinite;
+		animation-timing-function:steps(6);
+	}
+	@keyframes run{
+		from{
+			background-position-x:0;
+		}
+		to{
+			background-position-x:-1080px;
+		}
+	}
+  </style>
+ </head>
+ <body>
+	<div class="box"></div>
+ </body>
+</html>

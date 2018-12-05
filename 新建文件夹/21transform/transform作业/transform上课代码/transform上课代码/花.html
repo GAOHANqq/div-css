@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.wrap{
+		position:relative;
+		width:800px;
+		height:500px;
+		margin:50px auto;
+		/* border:1px solid red; */
+	}
+	.wrap div{
+		position:absolute;
+		bottom:0;
+		left:400px;
+		width:300px;
+		height:300px;
+		border-radius:300px 0;
+		background-color:pink;
+		transform:rotate(-45deg);
+		transform-origin:left bottom;
+		transition:6s;
+		opacity:.5;
+	}
+	.wrap:hover :nth-child(1){
+		transform:rotate(-23deg);
+	}
+	.wrap:hover :nth-child(2){
+		transform:rotate(0deg);
+	}
+	.wrap:hover :nth-child(3){
+		transform:rotate(23deg);
+	}
+	.wrap:hover :nth-child(4){
+		transform:rotate(46deg);
+	}
+	.wrap:hover :nth-child(5){
+		transform:rotate(-68deg);
+	}
+	.wrap:hover :nth-child(6){
+		transform:rotate(-91deg);
+	}
+	.wrap:hover :nth-child(7){
+		transform:rotate(-114deg);
+	}
+	.wrap:hover :nth-child(8){
+		transform:rotate(-137deg);
+	}
+  </style>
+ </head>
+ <body>
+	<div class="wrap">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+ </body>
+</html>

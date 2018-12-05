@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	div{
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+	#box{
+		width:100px;
+		height:100px;
+		background-color:pink;
+	}
+	.box{
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+	body .box{
+		background-color:yellow !important;
+	}
+	body #box{
+		background-color:purple;
+	}
+	html body .box{
+		background-color:orange;
+	}
+	html body div{
+		background-color:black;
+	}
+	html body #box{
+		background-color:gray;
+	}
+	body div{
+		background-color:blue;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		选择器的优先级：
+			自身属性<通配符<标签选择器<类选择器<id选择器
+		多重选择器嵌套使用，我们通过刷选它的范围越小，优先级级越高
+		!important   提高样式的权重	
+	-->
+	<div class="box" id="box" style="color:red"></div>
+ </body>
+</html>

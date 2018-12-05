@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		position:absolute;
+		z-index:3;
+		width:200px;
+		height:200px;
+		background-color:pink;
+	}
+	.wrap{
+		position:relative;
+		z-index:4;
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		定位元素为fixed,relative,absolute它们层叠顺序变高；层级变高（z-index）
+		只有定位元素才能设置z-index;
+		z-index	  层级
+		1.定位元素默认后者层级高于前者
+		2.z-index的值越大成级越高；
+		3.z-index正数的情况下，父元素不能和子元素做比较；如果是设置负值，
+		它的父元素不能给z-index;
+	-->
+	<div class="box"></div>
+	<div class="wrap"></div>
+ </body>
+</html>

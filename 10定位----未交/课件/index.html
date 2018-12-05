@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		float:left;
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+	.wrap{
+		display:inline-block;
+		width:100px;
+		height:100px;
+		margin-left:-100px;
+		background-color:green;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+	元素的层叠顺序：
+		background/border<block盒子模型<float元素<inline/inline-block元素
+	-->
+	<div class="box"></div>
+	<div class="wrap"></div>
+	&gt;
+ </body>
+</html>

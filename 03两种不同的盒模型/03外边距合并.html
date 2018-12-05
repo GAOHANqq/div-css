@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<title>外边距合并</title>
+		<style type="text/css">
+			*{
+				margin:0;padding:0;
+			}
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: purple;
+				border:1px solid red;
+				margin-bottom:50px;
+				/* overflow:hidden; */
+				/* display:inline-block; */
+			}
+			p{
+				width: 50px;
+				height: 50px;
+				background-color: pink;
+				margin-top:30px;
+			}
+			h2{
+				width: 250px;
+				height: 250px;
+				background-color: blue;
+				margin-top: 100px;
+			}
+		/*垂直外边距合并
+
+		同级元素发生外边距合并:
+			当一个元素出现在另一个元素上面,第一个元素的下外边距与第二个元素的上外边距合并
+			(合并之后取最大值)
+
+				解决方法:
+					1)给第二个元素浮动
+					2)添加绝对定位
+					3)给某一个元素设置display:inline-block;
+
+		父子级之间发生外边距合并:
+			当一个元素包含另一个元素的时候,他们的上外边距会发生合并
+			(合并后取最大值)
+
+			解决办法:
+			1)给父级设置内边距代替子级外边距(***)
+			2)给父级加边框
+			3)给父级加overflow:hidden(***)
+			4)绝对定位
+			5)display:inline-block;
+		*/
+		</style>
+	</head>
+	<body>
+		<div>
+			<p></p>
+		</div>
+		<h2></h2>
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>作业3眼睛--小书书</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+			body{background-color: #000;}
+			.wrap{
+				width: 600px;
+				height: 300px;
+				background-color: #000;
+				margin:50px auto;
+				padding:10px;
+				/* border:1px solid red; */
+			}
+			.wrap > div{
+				width: 200px;
+				height: 100px;
+				background-color: #fff;
+				display:inline-block;
+				overflow:hidden;
+				box-shadow: 0 0 50px #fff;
+			}
+			.wrap .left{
+				border-radius:1% 50% 1%/1% 100% 1%;
+			}
+			.wrap .right{
+				margin-left:195px;
+				border-radius:50% 1% 50%/100% 1% 100%;
+			}
+			.wrap .eye{
+				width: 100px;
+				height: 100px;
+				border-radius:50%;
+				background:
+				linear-gradient(
+					-32deg,
+					transparent 50%,
+					#000 50%,
+					#000 80%,
+					transparent 80%
+				)no-repeat left bottom/43%,
+				linear-gradient(
+					32deg,
+					transparent 50%,
+					#000 50%,
+					#000 80%,
+					transparent 80%
+				)no-repeat right bottom/43%,
+				linear-gradient(
+					to top,
+					#000 100%,
+					transparent 50%
+				)no-repeat top/22%,
+				radial-gradient(
+					circle 100px at center,
+					#fff 10%,
+					#fff 10%,
+					#000 10%,
+					#000 30%,
+					red 30%,
+					red 50%,
+					transparent
+				);
+			}
+			.wrap .pos1{
+				margin:10px 0 0 90px;
+			}
+			.wrap .pos2{
+				margin:10px 0 0 10px;
+			}
+	</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="left">
+				<div class="eye pos1"></div>
+			</div>
+			<div class="right">
+				<div class="eye pos2"></div>
+			</div>
+		</div>
+	</body>
+</html>
+

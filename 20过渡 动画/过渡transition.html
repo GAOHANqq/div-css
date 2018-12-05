@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			.box{
+				width: 600px;
+				height: 600px;
+				border:1px solid red;
+			}
+			.box div{
+				width: 100px;
+				height: 100px;
+				line-height:100px;
+				color:#fff;
+				font-size:16px;
+				background-color: green;
+				/* transition:all 3s 2s ease-in; */ /*  复合属性 */
+				transition-property:all;	/* 过渡属性 */
+				transition-duration:3s;		/* 过渡时间 */
+				transition-delay:0s;		/* 延迟时间 */
+				 /* 运动形式 :(速度曲线) */
+			}
+			.box:hover div:nth-child(1){
+				width: 600px;
+				transition-timing-function:linear;
+			}
+			.box:hover div:nth-child(2){
+				width: 600px;
+				background-color: red;
+				transition-timing-function:ease;
+			}
+			.box:hover div:nth-child(3){
+				width: 600px;
+				background-color: yellow;
+				transition-timing-function:ease-in;
+			}
+			.box:hover div:nth-child(4){
+				width: 600px;
+				background-color: pink;
+				transition-timing-function:ease-out;
+			}
+			.box:hover div:nth-child(5){
+				width: 600px;
+				background-color: orange;
+				transition-timing-function:ease-in-out;
+			}
+			.box:hover div:nth-child(6){
+				width: 600px;
+				background-color: grey;
+				transition-timing-function:cubic-bezier(.73,1.36,.01,-0.61);
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			transition:		过渡
+				transition-property	 过渡属性
+						all	 所有属性
+						attr 单个属性
+						none 没有属性
+				transition-duration  过渡时间
+				transition-delay	 延迟时间
+				transition-timing-function:  运动形式 ：(速度曲线)
+
+				transition:all 3s 2s ease-in;	复合属性
+		-->
+		<div class="box">
+			<div>匀速:linear</div>
+			<div>快-->慢:ease</div>
+			<div>慢入快出:ease-in</div>
+			<div>快入慢出:ease-out</div>
+			<div>慢入慢出:ease-in-out</div>
+			<div>贝塞尔曲线:cubic-bezier</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none
+		}
+		.flex{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			/*align-items: flex-end;*/
+			align-content: stretch;
+			width: 500px;
+			height: 300px;
+			border: 1px black solid;
+		}
+		.flex li{
+			width: 100px;
+			/*height: 100px;*/
+			font: 40px bold;
+			line-height: 100px;
+			text-align: center;
+			box-shadow: 0 0 10px black inset;
+		}
+		.flex li:nth-child(3){
+			/*flex-grow: -1;*/
+			flex-basis: 50px;
+
+		}
+	</style>
+</head>
+<body>
+	<ul class="flex">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+	</ul>
+</body>
+</html>

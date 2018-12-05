@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>表单作业1</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			body{background-color: #f0f0f0;}
+			form{
+				width: 445px;
+				margin:50px auto;
+				padding:40px 20px;
+				border:1px solid #ccc;
+				border-radius:3%;
+			}
+			.login{
+				position:relative;
+				width: 525px;
+				height: 40px;
+				line-height:40px;
+				margin-bottom:20px;
+				text-align:right;
+			}
+			.login input{
+				width: 290px;
+				height: 100%;
+				margin-right:130px;
+				margin-left:20px;
+				border-radius:5%;
+				border:1px solid #ccc;
+				text-indent:10px;
+				background-color: #f0f0f0;
+			}
+			.login input:hover{
+				border:2px solid #50a0d0;
+			}
+			.login input:hover ~ .tip{
+				display:block;
+			}
+			.tip{
+				display:none;
+				position:absolute;
+				top:-10px;
+				right:-5px;
+				width: 125px;
+				height: 60px;
+				border:1px solid #ccc;
+				background-color: #50a0d0;
+				border-radius:5%;
+				color:#fff;
+				text-align:left;
+				text-indent:10px;
+				line-height:20px;
+			}
+			.tip::before{
+				position:relative;
+				top:20px;
+				left:-20px;
+				display:block;
+				content:"";
+				width: 0px;
+				height: 0px;
+				border:10px solid transparent;
+				border-right-color: #50a0d0;
+			}
+			.foot{
+				height: 30px;
+				background-color: #3060b0;
+				border-radius:5%;
+			}
+			.foot a{
+				color:#fff;
+				padding:0px 20px;
+				line-height:30px;
+				text-align:center;
+			}
+			.foot1{
+				float:left;
+				margin-left:120px;
+			}
+			.foot2{
+				float:right;
+				margin-right:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="" method="post" target="_block">
+			<div class="login">
+				user<input type="text" name="user" placeholder="请输入账号">
+				<div class="tip">用户名必须为字母</div>
+			</div>
+			<div class="login">
+				password<input type="password" name="password" placeholder="密码">
+			</div>
+			<div class="login">
+				password<input type="password" name="password" placeholder="再次输入密码">
+			</div>
+			<div class="login">
+				email<input type="email" name="email" placeholder="输入你的邮箱" autocomplete="off">
+				<div class="tip">email格式要正确</div>
+			</div>
+			<div class="login">
+				nickname<input type="text" name="user" placeholder="昵称">
+			</div>
+			<div class="foot1 foot"><a href="">注册</a></div>
+			<div class="foot2 foot"><a href="">我有账号,我要登录</a></div>
+		</form>
+	</body>
+</html>

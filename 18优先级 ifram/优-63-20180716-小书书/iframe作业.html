@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+
+			.wrap{
+				position:relative;
+				width: 1200px;
+				height: 550px;
+				margin:50px auto;
+				padding:50px 0 0 50px;
+				background: url(images/mxcp1.jpg);
+			}
+			 .wrap .wrap-list{
+				width: 200px;
+			}
+			.wrap .wrap-list li{
+				width: 200px;
+				height: 100px;
+				margin-bottom:5px;
+				background-color: #fff;
+			}
+			.wrap .wrap-list img{
+				width: 200px;
+				height: 100px;
+			}
+			.wrap iframe{
+				position:absolute;
+				top:50px;
+				left:300px;
+				background-color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			 <ul class="wrap-list">
+				<li>
+					<a href="http://jx.tmall.com/" target="myiframe">
+						<img src="images/1.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="https://www.baidu.com/" target="myiframe">
+						<img src="images/2.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="https://jd.com/" target="myiframe">
+						<img src="images/3.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="https://weibo.com/" target="myiframe">
+						<img src="images/4.png" alt="">
+					</a>
+				</li>
+			</ul>
+			<iframe src="https://www.baidu.com/" frameborder="1" name="myiframe" width="800px" height="500px" scrolling="no" target="_self"></iframe>
+		</div>
+	</body>
+</html>

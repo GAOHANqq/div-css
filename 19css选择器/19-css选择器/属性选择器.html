@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		width:100px;
+		height:100px;
+		background-color:red;
+	}
+	[class*="b"]{
+		width:100px;
+		height:100px;
+		background-color:green;
+	}
+  </style>
+ </head>
+ <body>
+	<!--
+		属性选择器：
+			[attr]  找到有对应属性的元素
+			[attr="val"]	匹配所有att属性等于“val”的
+			[attr~="val"]   匹配所有att属性包含“val”的（val是一个独立的分开部分）
+			[attr|="val"]	 匹配所有att属性以val- 开头的或等于“val”
+			[attr^="val"]	匹配所有att属性 ‘val’开头的
+			[att$=val]	匹配所有att属性 ‘val’结束的
+			[att*=val]	匹配所有att属性 包含’val’的 (val可以是字母)
+	-->
+	<div class="b box">
+
+	</div>
+	<div class="abc box">
+
+	</div>
+	<div class="bbb"></div>
+	<div class="ccc"></div>
+
+ </body>
+</html>

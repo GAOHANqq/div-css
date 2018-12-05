@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+			.box{
+				height: 300px;
+				border:1px solid red;
+			}
+			.box .wrap{
+				float:left;
+				width: 50px;
+				height: 50px;
+				background-color: pink;
+				opacity:.5;
+			}
+			.box .wrap1{
+				display:inline-block;
+				width: 100px;
+				height: 100px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+	<!--
+		1.浮动元素会脱离文档流:
+		2.	(1)无论是行内元素还是块级元素,它都显示在浮动元素的后面;
+			(2)浮动元素下面的元素是块级元素时,浮动元素会覆盖下面的块级元素;
+			(3)浮动元素下面的元素是行内元素时,因为文字半脱离文档流,文字就会		显示在浮动元素的后面.
+		浮动出现最初目的:为了解决文字和图片的环绕.
+	-->
+		<div class="box">
+			<div class="wrap">1</div>
+				(1)无论是行内元素还是块级元素,它都显示在浮动元素的后面;
+				(2)浮动元素下面的元素是块级元素时,浮动元素会覆盖下面的块级元素;
+				(3)浮动元素下面的元素是行内元素时,因为文字半脱离文档流,文字就会		显示在浮动元素的后面.
+			<div class="wrap1">2</div>
+		</div>
+	</body>
+</html>
+

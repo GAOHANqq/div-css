@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+			.box{
+				width: 200px;
+				height: 200px;
+				margin: 50px auto;
+				border:1px solid red;
+			}
+			.box:before{
+				display:block;
+				content:"左青龙";
+				width: 100px;
+				height: 100px;
+				background-color: green;
+			}
+			.box::after{
+				display:block;
+				content:"右白虎";
+				background-color: blue;
+			}
+			span{
+				background-color: red;
+			}
+			.box1{
+				display:inline-block;
+				width: 100px;
+				height: 100px;
+				background-color: green;
+			}
+			.box2{
+				display:inline-block;
+				width: 100px;
+				height: 100px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			伪元素:
+				本质上是在元素上加一个盒子 (inline(行内元素))
+					:before 前面加内容
+					:after  后面加内容
+				::与:的区别:区分伪类和伪元素(建议写:)
+
+		-->
+		<div class="box">
+			中间is二百五
+		</div>
+
+		<!-- 行内元素解析空格 -->
+		<span>1</span>
+		<span>2</span>
+		<div class="box1"></div>
+		<div class="box2"></div>
+
+
+
+	</body>
+</html>

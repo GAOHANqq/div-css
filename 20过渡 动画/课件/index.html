@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	.box{
+		width:800px;
+		height:600px;
+		margin:50px auto;
+		border:1px solid red;
+	}
+	.box div{
+		width:100px;
+		height:100px;
+		background-color:green;
+		/* transition-property:all;
+		transition-duration:3s;
+		transition-delay:3s; */
+		transition:width 3s 3s ease-in;
+		color:#fff;
+		font-size:30px;
+	}
+	/* .box div:nth-child(2){
+		background-color:red;
+	}
+	.box div:nth-child(4){
+		background-color:red;
+	}
+	.box div:nth-child(6){
+		background-color:red;
+	}*/
+	.box:hover div:nth-child(1){
+		
+		width:800px;
+	}
+	/*.box:hover div:nth-child(2){
+		transition-timing-function:ease;
+		width:800px;
+	}
+	.box:hover div:nth-child(3){
+		transition-timing-function:ease-in;
+		width:800px;
+	}
+	.box:hover div:nth-child(4){
+		transition-timing-function:ease-out;
+		width:800px;
+	}
+	.box:hover div:nth-child(5){
+		transition-timing-function:ease-in-out;
+		width:800px;
+	}
+	.box:hover div:nth-child(6){
+		transition-timing-function:cubic-bezier(.38,1.68,.36,-0.4);
+		width:800px;
+	} */
+  </style>
+ </head>
+ <body>
+	<!--
+		transition:	  过渡
+			transition-property 过渡属性
+				all 所以属性
+				attr  单个的具体属性
+				none  没有属性
+			transition-duration 过渡时间
+			transition-delay  延迟时间
+		transition-timing-function	动画曲线
+			linear  匀速
+			ease （默认）  慢快慢
+			ease-in  慢入快出
+			ease-out 快入慢出
+			ease-in-out 慢入慢出
+		transition:属性 过渡 延迟 曲线
+	-->
+	<div class="box">
+		<div>linear</div>
+		<!-- <div>ease</div>
+		<div>ease-in</div>
+		<div>ease-out</div>
+		<div>ease-in-out</div>
+		<div>cubic-bezier</div> -->
+	</div>
+ </body>
+</html>

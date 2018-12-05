@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+			ul{
+				width: 800px;
+				height: 700px;
+				margin:50px auto;
+				border:1px solid red;
+			}
+			ul li{
+				float:left;
+				margin-right:5px;
+				width: 100px;
+				height: 100px;
+				background-color: green;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			浮动元素只有左浮动(float:left;)和右浮动(float:right)
+		浮动显示特点:
+			1.浮动遇到父盒子的边界就停止,并且按顺序显示
+			2.当浮动元素的父盒子小于浮动元素的宽度时,浮动元素会掉到下一行显示
+			3.当浮动元素高度不一样时,会出现高元素卡主低元素的情况
+		-->
+		<ul>
+			<li>1</li>
+			<li style="height:200px">2</li>
+			<li style="height:300px">3</li>
+			<li style="height:250px">4</li>
+			<li>5</li>
+		</ul>
+	</body>
+</html>

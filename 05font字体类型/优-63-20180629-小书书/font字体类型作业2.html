@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>font字体类型作业2</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+			body{
+				background-color: #ccc;
+			}
+			.link-list{
+				width: 100px;
+				margin:50px auto;
+				text-align:center;
+			}
+			.link-list ul{
+				width: 100%;
+			}
+			.link-list ul li{
+				padding:10px 5px;
+				margin:5px;
+			}
+			.link-list ul .first {
+				background-color: #000;
+				border:1px solid #fff;
+			}
+			.link-list ul .first span{
+				width: 100%;
+				color:#fff;
+			}
+
+			.link-list ul li ~ li{
+				background-color: #960;
+				display:none;
+			}
+			.link-list:hover li{
+				display:block;
+			}
+			.link-list ul li a{
+				color:#fff;
+			}
+			.link-list ul .first:hover{
+				cursor:default;
+				border:1px solid red;;
+			}
+			.link-list ul li:hover span{
+				color:red;
+			}
+			.link-list ul li ~ li:hover{
+				background-color: #cb9832;
+			}
+			.link-list ul li ~ li:hover a{
+				color:#bc831a;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="link-list">
+			<ul>
+				<li class="first"><span>更多链接</span></li>
+				<li><a href="">流行趋势</a></li>
+				<li><a href="">热门专区</a></li>
+				<li><a href="">独家内容</a></li>
+				<li><a href="">研发资源</a></li>
+			</ul>
+		</div>
+	</body>
+</html>

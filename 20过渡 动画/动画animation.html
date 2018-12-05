@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			.wrap{
+				position:relative;
+				width: 400px;
+				height: 400px;
+				border:1px solid red;
+			}
+			.wrap div{
+				position:absolute;
+				top:0;
+				left:0;
+				width: 100px;
+				height: 100px;
+				background-color: green;
+
+				animation-name: run;			/* 动画名字 */
+				animation-duration:5s;			/* 过渡时间	*/
+				animation-delay:0s;				/* 延迟时间 */
+				animation-timing-function:linear;
+				animation-iteration-count:infinite;	/* 执行次数 */
+				animation-direction:alternate-reverse;	/* 动画方向 */
+				animation-fill-mode:backwards;		/* 停止状态 */
+
+			}
+			.wrap:hover div:nth-child(1){
+				animation-play-state:paused;	/* 动画状态 */
+			}
+			/* @keyframes run{
+				from{
+					left:0;
+				}
+				to{
+					left:250px;
+				}
+			} */
+
+			@keyframes run{
+				0%{top:0;left:0;}
+				25%{top:0;left:300px}
+				50%{top:300px;left:300px}
+				75%{top:300px;left:0}
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			animation: 动画
+				animation必须与@keyframes一起使用
+
+				animation-name: run;			/* 动画名字 */
+				animation-duration:5s;			/* 过渡时间	*/
+				animation-delay:3s;				/* 延迟时间 */
+				animation-iteration-count:2;	/* 执行次数 */
+							infinite	无限次
+				animation-direction:			/* 动画方向 */
+							reverse：			反方向运行
+							alternate：			动画先正向再反向
+							alternate-reverse	动画先反向再正向
+				animation-play-state:			动画状态
+						running(默认)
+						paused 暂停
+				animation-fill-mode:
+						forwards 停止在最后一帧
+						backwards停止在初始位置
+
+				复合样式：
+				animation: name duration [timing-function] [delay] [iteration-count] [direction] [play-state] [fill-mode];
+
+
+		-->
+		<div class="wrap">
+			<div></div>
+		</div>
+	</body>
+</html>

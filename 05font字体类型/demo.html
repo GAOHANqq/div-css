@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" style="style:18px;">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+			body{
+				color:green;
+				font-size:18px;
+				background-color:#ccc;
+			}
+			.content{
+				width: 100px;
+				height: 100px;
+				background-color:#fff;
+				color:red;/*可继承*/
+			}
+			.box{
+					/* font-size:32px; */
+					width: 6.25em;
+					height: 6.25em;
+					background-color: blue;
+			}
+			.box2{
+					width: 5.55em;
+					height:5.55em;
+					background-color: purple;
+			}
+			@font-face:{
+						font-family:"aaa";
+						src:url("");
+				}
+			a{
+				font-size:2em;
+				font-family:"SimSun";/*宋体*/
+				font-weight:bold;/*bold加粗*/
+				color:inherit;
+			}
+
+				/*
+
+					color:
+						a标签的字体颜色不可继承,其他的都可以继承
+							(color:inherit;可继承)
+
+
+					font-size:字体大小
+						浏览器最小字体为12px,默认字体大小为16px
+						单位:px em % rem
+						em值 = 要设置的值/字体的大小
+							元素自身设置了font-size时,参考自身的文本大小
+							元素未设置font-size时,参考父级的文本大小
+
+						rem--->root em 相对于根标签(html)
+					font-family:字体类型
+
+					自定义字体
+					@font-face:{
+						font-family:"aaa";
+						src:url("");
+					}
+
+					font-weight:bold;
+						bold加粗  normal默认
+						100-900的值
+						变细 100-300 变粗600-900 默认400,500
+
+					font-variant:small-caps;小型变大写
+											默认为normal
+					font-style:italic;  italic  倾斜
+										oblique 斜体
+
+				*/
+			span{
+				font-variant:small-caps;
+				/* font-style:italic; */
+				font-style:oblique;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">大家好
+		</div>
+			<div class="box">大家好
+			</div>
+			<a href="#">你好</a>
+		<div class="box2">hello,everyone</div>
+		<span>abc</span>
+	</body>
+</html>

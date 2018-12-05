@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Tab选项卡</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			body{
+				background-color: #ddd;
+			}
+			.wrap{
+				position:relative;
+				width: 400px;
+				height: 400px;
+				margin:50px auto;
+			}
+			.wrap h1{
+				color:#fff;
+				margin-bottom:20px;
+			}
+			.tab{
+				padding-left:20px;
+			}
+			.tab li{
+				float:left;
+				width: 90px;
+				height: 50px;
+			}
+			.tab li input{
+				position:relative;
+				top:0;
+				z-index:100;
+				width: 90px;
+				height: 50px;
+				opacity:0;
+			}
+			.tab li input:checked ~ .info{
+				z-index:2;
+			}
+			.tab li input:checked ~ .tip{
+				top:-60px;
+				background-color: #376b1f;
+			}
+			.tab li span{
+				display:block;
+				position:relative;
+				top:-57px;
+				z-index:-1;
+				left:20px;
+				width: 90px;
+				text-align:center;
+				line-height:60px;
+				color:#fff;
+				background-color: #6a9e52;
+			}
+			.tab .info{
+				position:absolute;
+				top:112px;
+				left:0px;
+				width: 350px;
+				height: 235px;
+				background-color: #376b1f;
+			}
+			.tab .info a{
+				display:block;
+				line-height:40px;
+				color:#fff;
+				font-size:20px;
+				text-align:left;
+				margin-left:20px;
+				margin-top:15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<h1>纯CSS制作的TAB选项卡</h1>
+			<ul class="tab">
+				<li>
+					<input type="radio" name="check">
+					<span class="tip">头条</span>
+					<ul class="info">
+						<a href="">[热议]CalaxyS8成最值期待新机</a>
+						<a href="">[实用]魅族5S30分钟充电56%</a>
+						<a href="">[划算]爆款9.9元秒杀还包邮</a>
+						<a href="">[时尚]摩拜单车真的不如ofo?</a>
+					</ul>
+				</li>
+				<li>
+					<input type="radio" name="check">
+					<span class="tip">公告</span>
+					<ul class="info">
+						<a href="">[热议]新机</a>
+						<a href="">[实用]魅分钟充电56%</a>
+						<a href="">[划算]爆款9.9元秒杀还包邮</a>
+						<a href="">[时尚]摩拜单车真的不如ofo?</a>
+					</ul>
+				</li>
+				<li>
+					<input type="radio" name="check">
+					<span class="tip">足球</span>
+					<ul class="info">
+						<a href="">[热议]足球成就自我</a>
+						<a href="">[实用]魅族5S30分钟充电56%</a>
+						<a href="">[划算]爆款9.9元秒杀还包邮</a>
+						<a href="">[时尚]摩拜单车真的不如ofo?</a>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

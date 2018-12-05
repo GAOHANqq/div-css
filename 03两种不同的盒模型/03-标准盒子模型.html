@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>标准盒模型</title>
+		<style type="text/css">
+			body{
+				margin:0;padding:0;
+			}
+			/*
+				内容区:content 放置内容
+				边框区:border
+
+				复合属性:
+				border-width:; 边框线粗细
+				thin 细的 1px
+				thick 粗的
+				medium 默认
+
+				border-style:solid; 边框线属性
+				solid实线 dashed虚线 dotted点状线 double双线
+				十六进制颜色:
+					#cc00ff cc红 00绿  ff蓝
+					#000黑色 #ccc灰色 #fff白色
+
+				padding 内边距 边框线以内的距离 和内容的距离
+				padding会撑大盒子,撑大多少减去多少以便保持不变
+				padding-top:上
+
+				padding:上右下左;
+				padding:上下 左右;
+				padding:上 左右 下;
+
+				margin 外边距  边框线以外的距离
+				margin-top:上
+
+				margin:上右下左;
+				margin:上下 左右;
+				margin:上 左右 下;
+				margin:auto;  左右居中 自适应
+			*/
+			div{
+				float:left;
+				width: 200px;
+				height: 190px;
+
+				padding:20px;
+				padding-top:30px;
+
+				margin:50px;
+
+
+				border:3px solid red;
+				border-top-width:5px;
+				border-top-style:dashed;/*虚线*/
+
+				border-right-width:thin;/*细的*/
+				border-right-style:dotted;/*点状线*/
+				border-right-color:blue;
+
+				border-bottom-width:medium;/*medium 默认*/
+				border-bottom-style:double;/*双线*/
+
+				border-left-width:thick;/*粗的*/
+				background-color: pink;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div>大家好</div><!--
+		<div>大家好</div>
+		<span>么么哒</span> -->
+	</body>
+</html>

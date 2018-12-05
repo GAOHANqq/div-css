@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			body{background-color: #000;}
+			.wrap{
+				overflow:hidden;
+				position:relative;
+				width: 500px;
+				height: 500px;
+				margin:50px auto;
+				background-color: rgba(255,255,255,.3);
+				border-radius:10px;
+				box-shadow: 0 0 5px #fff; 0 0 10px #ddd;
+			}
+			.wrap .pic{
+				overflow:hidden;
+				position:absolute;
+				top:50px;
+				left:50px;
+				width: 400px;
+				height: 400px;
+				border-radius:10px;
+				background: url("1.jpg") no-repeat center/cover;
+			}
+			.wrap .pic span{
+				float:left;
+				width: 80px;
+				height: 80px;
+				background-color: #fff;
+				opacity:1;
+			}
+			/*第一排*/
+			.wrap .pic span:nth-child(1){
+				animation: run 1s 0s linear forwards;
+			}
+			.wrap .pic span:nth-child(2){
+				animation: run 1s 1s linear forwards;
+			}
+			.wrap .pic span:nth-child(3){
+				animation: run 1s 2s linear forwards;
+			}
+			.wrap .pic span:nth-child(4){
+				animation: run 1s 3s linear forwards;
+			}
+			.wrap .pic span:nth-child(5){
+				animation: run 1s 4s linear forwards;
+			}
+			/*第二排*/
+			.wrap .pic span:nth-child(6){
+				animation: run 1s 1s linear forwards;
+			}
+			.wrap .pic span:nth-child(7){
+				animation: run 1s 2s linear forwards;
+			}
+			.wrap .pic span:nth-child(8){
+				animation: run 1s 3s linear forwards;
+			}
+			.wrap .pic span:nth-child(9){
+				animation: run 1s 4s linear forwards;
+			}
+			.wrap .pic span:nth-child(10){
+				animation: run 1s 3s linear forwards;
+			}
+			/*第三排*/
+			.wrap .pic span:nth-child(11){
+				animation: run 1s 2s linear forwards;
+			}
+			.wrap .pic span:nth-child(12){
+				animation: run 1s 3s linear forwards;
+			}
+			.wrap .pic span:nth-child(13){
+				animation: run 1s 4s linear forwards;
+			}
+			.wrap .pic span:nth-child(14){
+				animation: run 1s 3s linear forwards;
+			}
+			.wrap .pic span:nth-child(15){
+				animation: run 1s 2s linear forwards;
+			}
+			/*第四排*/
+			.wrap .pic span:nth-child(16){
+				animation: run 1s 3s linear forwards;
+			}
+			.wrap .pic span:nth-child(17){
+				animation: run 1s 4s linear forwards;
+			}
+			.wrap .pic span:nth-child(18){
+				animation: run 1s 3s linear forwards;
+			}
+			.wrap .pic span:nth-child(19){
+				animation: run 1s 2s linear forwards;
+			}
+			.wrap .pic span:nth-child(20){
+				animation: run 1s 1s linear forwards;
+			}
+			/*第五排*/
+			.wrap .pic span:nth-child(21){
+				animation: run 1s 4s linear forwards;
+			}
+			.wrap .pic span:nth-child(22){
+				animation: run 1s 3s linear forwards;
+			}
+			.wrap .pic span:nth-child(23){
+				animation: run 1s 2s linear forwards;
+			}
+			.wrap .pic span:nth-child(24){
+				animation: run 1s 1s linear forwards;
+			}
+			.wrap .pic span:nth-child(25){
+				animation: run 1s 0s linear forwards;
+			}
+			/*四个边的动画效果*/
+			.wrap .top,.wrap .right,.wrap .bottom,.wrap .left{
+				width: 10px;
+				height: 10px;
+				background-color: #0080ff;
+			}
+			.wrap .top{
+				position:absolute;
+				top:0;
+				left:0;
+				animation: run-top-bottom 4.5s linear forwards;
+			}
+			.wrap .right{
+				position:absolute;
+				top:0;
+				right:0;
+				animation: run-left-right 4.5s linear forwards;
+			}
+			.wrap .bottom{
+				position:absolute;
+				bottom:0;
+				right:0;
+				animation: run-top-bottom 4.5s linear forwards;
+			}
+			.wrap .left{
+				position:absolute;
+				bottom:0;
+				left:0;
+				animation: run-left-right 4.5s linear forwards;
+			}
+			@keyframes run{
+				to{opacity:0;}
+			}
+			@keyframes run-top-bottom{
+				to{width:500px;}
+			}
+			@keyframes run-left-right{
+				to{height:500px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="top"></div>
+			<div class="right"></div>
+			<div class="bottom"></div>
+			<div class="left"></div>
+			<div class="pic">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</body>
+</html>

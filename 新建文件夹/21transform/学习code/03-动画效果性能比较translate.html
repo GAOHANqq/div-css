@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+
+			.box2{
+				transform:translate(0);
+				width: 100px;
+				height: 100px;
+				background-color: green;
+				animation: run2 3s linear forwards;
+			}
+
+			@keyframes run2{
+				to{
+					transform:translate(500px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			使用translate做动画效果时,性能要比position好
+				详见03的比较
+			故做动画效果时,尽量使用translate
+		-->
+		<div class="box2"></div>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+@charset "uft-8";
+.box{
+	width:100px;
+	height:100px;
+	background:url("../1.jpg");
+}

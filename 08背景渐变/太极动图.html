@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>太极图</title>
+  <style>
+  body{
+     margin:0;
+     background-color:#ccc;
+  }
+  .taichi{
+       display:flex;
+	   align-items:center;
+       width:400px;
+	   height:400px;
+	   background:linear-gradient(#000 50%,#fff 50%);
+	   margin:100px auto 0 auto;
+	   border-radius:50%;
+  }
+  .taichi::before,.taichi::after{
+	 display:block;
+	 content:"";
+     width:50%;
+	 height:50%;
+	 border-radius:50%;
+	 animation:changesize 1s infinite alternate linear;
+  }
+  .taichi::before{
+     background:radial-gradient(#000 25%,#fff 25%);
+     transform-origin:0% 50%;
+  }
+  .taichi::after{
+     background:radial-gradient(#fff 25%,#000 25%);
+	 transform-origin:100% 50%;
+     animation-delay:-1s;
+  }
+  @keyframes changesize{
+	  from{
+	   transform:scale(0.5);
+	  }
+	  to{
+	  transform:scale(1.5);
+	  }
+  }
+  </style>
+ </head>
+ <body>
+  <i class="taichi"></i>
+ </body>
+</html>

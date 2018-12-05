@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content="">
+		<meta name="Description" content=""/>
+		<link rel="styleshet" href="css/reset.css" />
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,input{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{border:0;}
+			a{text-decoration:none;color:#222;}
+			.box{
+				width: 100%;
+				height: 520px;
+				margin: 50px auto;
+				background: url(images/demo1/dlbg.jpg);
+			}
+			.box .wrap{
+				width: 1000px;
+				height: 400px;
+				margin:auto;
+				padding:60px 0px;
+			}
+			.box .wrap .login{
+				float:right;
+				width: 280px;
+				height: 380px;
+				background-color: #f0e0e0;
+			}
+			.box .login .top-login{
+				width: 220px;
+				height: 208px;
+				margin:20px 30px 0px;
+				/* border:1px solid #fff; */
+				background: url("images/demo1/but.jpg")no-repeat 0px 155px;
+			}
+			.box .login .top-login > input{
+				width: 220px;
+				height: 40px;
+				margin-bottom:20px;
+				text-indent:45px;
+			}
+			.box .login .top-login > p{
+				margin-bottom:20px;
+				font-size:12px;
+			}
+			.box .login .top-login .user{
+				background: url("images/demo1/zhanghao.jpg")no-repeat 0px -2px;
+			}
+			.box .login .top-login .password{
+				background: url("images/demo1/mima.jpg")no-repeat 0px -2px;
+			}
+			.box .login .btm-login{
+				width: 100%;
+				border-top:1px dashed #ccc;
+				font-size:12px;
+				text-align:center;
+				line-height:150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="wrap">
+				<div class="login">
+					<div class="top-login">
+						<input type="text" name="user" placeholder="用户名/邮箱地址/手机号" class="user">
+						<input type="password" name="password" placeholder="密码" class="password">
+						<p>
+							<input type="checkbox" name="user">记住账号
+							<a href="#">欢迎注册</a>
+							<a href="#">忘记密码?</a>
+						</p>
+					</div>
+					<div class="btm-login">
+						<p>合作网站账号登陆:
+							<img src="images/demo1/weixin.png" alt="">
+							<img src="images/demo1/qqlogin.png" alt="">
+							<img src="images/demo1/taobao.png" alt="">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

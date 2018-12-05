@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			.box{
+				width: 100px;
+				height: 100px;
+				margin:50px;
+				background-color: pink;
+				/* transform:scale(1.5); */
+				/* transform:translate(20px,50px); */
+				transform:skewX(45deg);
+				/* transform:skew(15deg,30deg); */
+				transform-origin:top left;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			2D变换:
+				-1)scale(x,y)-----缩放
+					正数:	0--1	缩小为多少倍
+							大于1	放大为多少倍
+					负数:翻转后放大或缩小为多少倍
+
+				-2)translate(x,y)----位移
+					translateX
+					translateY
+				-3)skew(deg,deg)-----倾斜
+					skewX,skewY
+					使用的是度数
+				-4)transform-origin----2D变换基点
+					关键词: left / top / bottom / right
+					像素单位值
+					属性值:第一个是X轴上,第二个是Y轴上,第三个值Z轴上
+		-->
+		<div class="box">
+			高翰
+		</div>
+	</body>
+</html>

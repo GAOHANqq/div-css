@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style type="text/css">
+		.box{
+			width:200px;
+			border:1px solid red;
+			text-transform:uppercase;/*小写字母变大写*/
+			/*letter-spacing:20px;字（字母）间距*/
+			white-space:nowrap;
+			/*
+				white-space 控制文本换行方式
+					normal	默认
+					nowrap 不换行
+			*/
+		}
+		.box1{
+			text-transform:lowercase;/*大写字母变小写*/
+			word-spacing:50px;/*词间距*/
+		}
+		.box2{
+			width:500px;
+			border:1px solid green;
+			text-transform:capitalize;/*单词首字母大写*/
+			word-break:break-all;/*强制换行*/
+		}
+  </style>
+ </head>
+ <body>
+	<div class="box">
+		i have an apple小懒同学要学会百度
+	</div>
+	<div class="box1">
+		I HAVE AN APPLE 小 懒 同 学 要学会百度
+	</div>
+	<div class="box2">
+		i have an apple;i have an apple;i have an apple;i have an apple;i have an apple;i have an apple;i have an apple;i have an apple;i have an apple;i have an apple;i have an apple;i have an apple;
+	</div>
+ </body>
+</html>
