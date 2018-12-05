@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="Generator" content="EditPlus®"/>
+		<meta name="Author" content=""/>
+		<meta name="Keywords" content=""/>
+		<meta name="Description" content=""/>
+		<title>Document</title>
+		<style type="text/css">
+			body,p,ul,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6{margin:0;padding:0;}
+			ul,ol{list-style:none;}
+			img{display:block;border:0;}
+			a{text-decoration:none;color:#222;}
+			body{
+				background-color: #000;
+			}
+			.wrap{
+				position:relative;
+				width: 40px;
+				height: 120px;
+				margin: 100px auto;
+				background-color: red;
+				box-shadow: 0 0 20px rgb(0,0,0,.5) inset;
+				border-radius: 0 0 23px 21px / 0 0 10px 10px;
+			}
+			.wrap:before{
+				position:absolute;
+				top: -8px;
+				content:"";
+				width: 40px;
+				height: 15px;
+				background-color: #ef4d65;
+				border-radius:50%;
+			}
+			.wrap:after{
+				position:absolute;
+				top: -20px;
+				left: 50%;
+				content:"";
+				width: 4px;
+				height: 20px;
+				margin-left: -2px;
+				background:linear-gradient(to bottom,#fff 10%,#000 100%);
+			}
+			.wrap .fire{
+				position: absolute;
+				top: -25px;
+				left: 50%;
+				width: 10px;
+				height: 20px;
+				margin-left:-5px;
+				background-color: #fff;
+				box-shadow:0px -5px 6px 5px #fff, 0px -12px 12px 12px yellow, 0px -16px 4px 16px red;
+				border-radius: 2px 10px 12px 5px/5px 5px 6px 5px;
+				animation:run 2s infinite;
+			}
+			@keyframes run{
+			0%{
+				transform:scale(1);
+			}
+			30%{
+				transform:scale(1.1,0.9);
+			}
+			50%{
+				transform:scale(1,1.1);
+
+			}
+			80%{
+				transform:scale(0.9,1.1);
+			}
+			100%{
+				transform:scale(1);
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="fire"></div>
+		</div>
+	</body>
+</html>
