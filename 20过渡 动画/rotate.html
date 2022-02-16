@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="Generator" content="EditPlus®"/>
+    <meta name="Author" content=""/>
+    <meta name="Keywords" content=""/>
+    <meta name="Description" content=""/>
+    <title>美女动画</title>
+    <style type="text/css">
+        .Exhibition {
+            perspective: 500px;
+            transform: rotateX(0deg);
+        }
+        .content {
+            margin-left: 600px;
+            margin-top: 200px;
+            width: 200px;
+            height: 200px;
+            transform-style: preserve-3d;
+            -webkit-animation: rotate 10s infinite linear;
+            -moz-animation: rotate 10s infinite linear;
+            animation: rotate 10s infinite linear;
+            position: relative;
+        }
+
+        .img1 {
+            background-color: #ccc;
+            transform: rotateY(0deg) translateZ(50px);
+        }
+
+        .img2 {
+            background-color: #1E9FFF;
+            transform: rotateY(90deg) translateY(-100px) translateZ(50px);
+        }
+
+        .img3 {
+            background-color: #b2c7fb;
+            transform: rotateY(180deg) translateY(-200px) translateZ(50px);
+        }
+
+        .img4 {
+            background-color: pink;
+            transform: rotateY(270deg) translateY(-300px) translateZ(50px);
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotateY(0deg)
+            }
+            to {
+                transform: rotateY(360deg)
+            }
+        }
+
+        .content div{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="Exhibition">　　　　　　　　　　　　　　　　　　　　
+        <div class="content">　
+            <div class="img1">1</div>
+            <div class="img2">2</div>
+            <div class="img3">3</div>
+            <div class="img4">4</div>　   　　　　　　　　　　　　　　　　　　
+        </div>
+    </div>
+</body>
+</html>
